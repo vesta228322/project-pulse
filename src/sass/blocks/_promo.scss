@@ -1,7 +1,7 @@
 .promo {
     min-height: 650px;
     padding: 21px 0 93px 0;
-    background: url(../img/main.jpg) center center/cover no-repeat;
+    background: url(../img/main.jpg) center (center/cover) no-repeat;
     background-color: #000;
     &__wrapper {
         display: flex;
@@ -36,9 +36,20 @@
         font-size: 14px;
         font-weight: 500;
         img {
-            margin-bottom: 20px;
             display: block;
             margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        padding-top: 18px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: underline;
         }
     }
 }
