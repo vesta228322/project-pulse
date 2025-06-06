@@ -5,22 +5,22 @@
     .promo{
         &__wrapper {
             margin: 0 15px;
+            margin-top: 90px;
         }
     }
     .advantages {
         &__wrapper {
-            margin: 0 10px;
-        }
-    }
-    .title {
-        &_left {
-            font-size: 33px;
-            margin: 0 15px;
+            margin: 0 10px;            
         }
     }
     .consultation {
         &__descr {
-            margin: 0 15px;
+            margin-left: 15px;
+        }
+    }
+    .title {
+        &_left {
+            margin-left: 15px;
         }
     }
     .feed-form {
@@ -29,68 +29,92 @@
 }
 
 @media (max-width: 767px) {
-    .header{
-        &__logo {
-            margin-bottom: 10px;
-        }
+    .header {
         &__official {
             display: none;
         }
     }
     .promo {
         &__wrapper {
-            align-items: center;
             margin-top: 45px;
+            align-items: center;
         }
-        &__icon {
-            justify-content: space-around;
+        &__icons {
+            flex-direction: row;
         }
     }
-    .advantages{
+    .advantages {
         &__wrapper {
             flex-direction: column;
             align-items: center;
+            margin: 0;
+        }
+        &__icon {
+            margin-top: 25px;
+        }
+    }
+    .consultation {
+        .title {
+            &_left {
+                font-size: 20px;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        &__descr {
+            text-align: center;
+            margin: 40px 0 0 0;
+        }
+    
+    }
+    .feed-form {
+        margin: 0 auto;
+        margin-top: 36px;
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        flex-direction: column;
+        margin: 0;
+        &__contacts {
+            align-items: center;
+            margin-top: 15px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__subheader {
+            font-size: 12px;
+            line-height: 13px;
+        }
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+            width: 0;
         }
         &__icon {
             margin-top: 10px;
         }
     }
     .title {
-        &left {
-            font-size: 20px;
-            text-align: center;
-        }
+        font-size: 20px;
     }
-    .feed-form {
-        margin: 0 auto;
-        margin-top: 36px;
-    }      
-    }
-@media (max-width: 575px) {
-    .promo {
-        &__wrapper {
-            margin-top: 45px;
+    .consultation {
+        padding-top: 45px;
+        .title {
+            &_left {
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
-        &__header {
-            font-size: 20px;
-            line-height: 20px;
-        }
-        &__subheader {
+        &__descr {
             font-size: 12px;
-            line-height: 12px;
-        }
-        &__icons {
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-            width: 100%;
-        }
-    }
-    .button {
-        &_main {
-            width: 240px;
-            font-size: 14px;
-        }
-    }
+            line-height: 14px;
 
+        }
+    }
 }
