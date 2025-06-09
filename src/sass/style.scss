@@ -4,7 +4,7 @@
 }
 
 .container {
-    max-width: 950px;
+    max-width: 940px;
     margin: 0 auto;
 }
 @import 'blocks/header';
@@ -15,4 +15,5 @@
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel';
+@import 'blocks/catalog';
 @import 'blocks/media';
