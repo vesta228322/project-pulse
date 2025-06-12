@@ -1,0 +1,34 @@
+.reviews {
+    padding-bottom: 71px;
+    &__content {
+        padding-top: 70px;
+        hr {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    &__item {
+        display: flex;
+    }
+    &__user-photo {
+        min-width: 169px;
+        height: 169px;
+        margin-right: 62px; 
+    }
+    &__username {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    &__experience {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__comment {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

@@ -26,6 +26,18 @@
     .feed-form {
         margin-left: 15px;
     }
+    .catalog {
+        &__content {
+            &_active {
+                justify-content: center;
+            }
+        }
+    }
+    .reviews {
+        &__item {
+            padding: 0 10px 0 10px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -71,6 +83,47 @@
         margin: 0 auto;
         margin-top: 36px;
     }
+    .carousel {
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 140px;
+            font-size: 14px;
+        }
+    }
+    .reviews {
+        &__user-photo {
+            min-width: 145px;
+            height: 145px;
+            margin-right: 40px;
+        }
+    }
+    .footer {
+        &__info {       
+            width: 270px;
+            height: 160px;
+            padding: 15px 16px 16px 16px;
+        }
+        &__addr {
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__phone {
+            margin-bottom: 20px;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        &__social {
+            gap: 15px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
@@ -114,7 +167,28 @@
         &__descr {
             font-size: 12px;
             line-height: 14px;
-
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+    }
+    .reviews {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__user-photo {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 228px;
+            left: 0;
+            transform: translateX(0);
         }
     }
 }
