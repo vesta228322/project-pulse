@@ -10,4 +10,12 @@
         line-height: 25px;
         margin-top: 80px;
     }
+    .error {
+        border: 2px solid red;
+        outline: 2px red;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+    }
 }
