@@ -58,7 +58,7 @@ $(document).ready(function(){
                 username: {
                     required: true,
                     minlength: 2
-                  },
+                },
                 phone: "required",
                 email: {
                     required: true,
@@ -69,13 +69,13 @@ $(document).ready(function(){
                 username: {
                     required: "Пожалуйста, введите своё имя",
                     minlength: jQuery.validator.format("Введите {0} символа!")
-                  },
+                },
                 phone: "Пожалуйста, введите номер телефона",
                 email: {
-                  required: "Пожалуйста, введите свою почту",
-                  email: "Введите существующую почту"
+                required: "Пожалуйста, введите свою почту",
+                email: "Введите существующую почту"
                 }
-              }
+            }
         });
     };
     validateForms('#consiltation-for');
